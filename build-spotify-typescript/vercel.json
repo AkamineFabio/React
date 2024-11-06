@@ -1,11 +1,15 @@
 {
     "headers": [
         {
-            "source": "/audio/(.*).mp3",
+            "source": "/(.*).mp3",
             "headers": [
                 {
                     "key": "Content-Type",
                     "value": "audio/mpeg"
+                },
+                {
+                    "key": "Content-Disposition",
+                    "value": "inline"
                 }
             ]
         }
